@@ -6,16 +6,15 @@ PyTorch implementation of "Cross-attention Spatio-temporal Context Transformer f
 Historical maps provide useful spatio-temporal information on the Earth’s surface before modern earth observation techniques came into being. To extract information from maps, neural networks, which gain wide popularity in recent years, have replaced hand-crafted map processing methods and tedious manual labor. However, aleatoric uncertainty, known as data-dependent uncertainty, inherent in the drawing/scanning/fading defects of the original map sheets and inadequate contexts when cropping maps into small tiles considering the memory limits of the training process, challenges the model to make correct predictions. As aleatoric uncertainty cannot be reduced even with more training data collected,
 we argue that complementary spatio-temporal contexts can be helpful. To achieve this, we propose a U-Net-based network that fuses spatio-temporal features with cross-attention transformers(U-SpaTem), aggregating information at a larger spatial range as well as through a temporal sequence of images. Our model achieves a better performance than other state-or-art models that use either temporal or spatial contexts. Compared with pure vision transformers, our model is more lightweight and effective. To the best of our knowledge, leveraging both spatial and temporal contexts have been rarely explored before in the segmentation task. Even though our application is on segmenting historical maps, we believe that the method can be transferred into other fields with similar problems like temporal sequences of satellite images.
 
-<embed src="img/overallarchitecturefinal.pdf" width="500" height="375" type="application/pdf">
+<img src="img/pipeline.png" width="800"/>
 
 If you find this code useful in your research, please cite:
 
 ```
 @inproceedings{wu2021spatialtemporal,
       title={Cross-attention Spatio-temporal Context Transformer for Semantic Segmentation of Historical Maps}, 
-      author={**Sidi Wu** and **Yizi Chen** and Konrad Schindler and Lorenz Hurni},
+      author={Sidi Wu and Yizi Chen and Konrad Schindler and Lorenz Hurni},
       year={2023},
-      <!-- eprint={2109.01605}, -->
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
