@@ -1,0 +1,4 @@
+name: sigspatial
+channels:
+  - defaults
+prefix: /local/home/yizchen/miniconda3/envs/sigspatial
