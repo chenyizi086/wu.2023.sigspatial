@@ -56,18 +56,26 @@ conda env create -f environment.yml
 conda activate sigspatial
 ```
 
-### 2. Download spatial-temporal historical maps dataset
+### 2. Download spatial-temporal historical maps dataset (training dataset)
 
-** The dataset will be released soon...
+The training dataset could be download from:
+
+* [spatial-temporal-historical-map](https://www.polybox.ethz.ch/index.php/apps/files/?dir=/sigspatial_dataset&fileid=3429218146)
+
+🚨: At present, we have made the training patch dataset available for release. 
+Regarding the testing set, we plan to release it as soon as we obtain the necessary copyrights from swisstopo.
 
 ## How to use :rocket:
 
 ### 1. Train models
 
+* [Segformer (paper)](https://proceedings.neurips.cc/paper/2021/file/64f1f27bf1b4ec22924fd0acb550c235-Paper.pdf)
 ```
-# Segformer
 python train_segformer.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
+```
 
+* [SpaTem model]()
+```
 # U-spa-temp (with different head options)
 python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 4
 python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 8
@@ -78,22 +86,25 @@ python train_spatial.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
 
 # U-temp
 python train_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
+```
 
-# Original U-Net
+* [U-Net (paper)](https://arxiv.org/pdf/1505.04597.pdf%EF%BC%89)
+```
 python train_unet.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
+```
 
-# 3d-unet
+* [3d-unet (paper)](https://arxiv.org/pdf/1606.06650.pdf%E4%BB%A3%E7%A0%81%E5%9C%B0%E5%9D%80%EF%BC%9Ahttps://github.com/wolny/pytorch-3dunet)
+```
 python train_unet3d.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
+```
 
-# U-TAE
+* [U-TAE (paper)](https://openaccess.thecvf.com/content/ICCV2021/papers/Garnot_Panoptic_Segmentation_of_Satellite_Image_Time_Series_With_Convolutional_Temporal_ICCV_2021_paper.pdf)
+```
 python train_utae.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
 ```
 
 Results and weights are saved at `training_info/`.
 
-### 2. Inference
-
-
-### 3. Acknowledgement
+### 2. Acknowledgement
 We appreciate helps from:  
-* public code [U-TAE](https://github.com/VSainteuf/utae-paps.git)
+* Public code [U-TAE](https://github.com/VSainteuf/utae-paps.git)
