@@ -36,11 +36,11 @@ Structure of this repository:
 │   ├── unet                    <- Unet model
 │   ├── unet3d                  <- 3d unet model
 │   ├── utae                    <- L-TAE model
-├──viz                          <- Visualization utiliy function
-├──data.py                      <- Dataloader
-├──environment.yml              <- Conda environment .yml file
-├──log.py                       <- Log management file
-├──train_*.py                   <- Training codes for different models (* segformer, spatial_temporal, ...)
+├── viz                          <- Visualization utiliy function
+├── data.py                      <- Dataloader
+├── environment.yml              <- Conda environment .yml file
+├── log.py                       <- Log management file
+├── train_*.py                   <- Training codes for different models (* segformer, spatial_temporal, ...)
 └── README.md
 ```
 
@@ -75,16 +75,16 @@ python train_segformer.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
 
 * [U-SpaTem model]()
 ```
-# U-spa-temp (with different head options)
-python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 4
-python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 8
-python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 16
-
 # U-spa
 python train_spatial.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
 
 # U-temp
 python train_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
+
+# U-spa-temp (with different head options)
+python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 4
+python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 8
+python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 16
 ```
 
 * [U-Net (paper)](https://arxiv.org/pdf/1505.04597.pdf%EF%BC%89)
