@@ -59,6 +59,8 @@ The training dataset could be download from:
 
 * [spatial-temporal-historical-map](https://www.polybox.ethz.ch/index.php/apps/files/?dir=/sigspatial_dataset&fileid=3429218146)
 
+And it should be placed within the 'dataset/' directory.
+
 🚨: At present, we have made the training patch dataset available for release. 
 Regarding the testing set, we plan to release it as soon as we obtain the necessary copyrights from swisstopo.
 
@@ -71,7 +73,7 @@ Regarding the testing set, we plan to release it as soon as we obtain the necess
 python train_segformer.py --cuda --gpu 0 --lr 5e-4 --batch-size 10
 ```
 
-* [SpaTem model]()
+* [U-SpaTem model]()
 ```
 # U-spa-temp (with different head options)
 python train_spatial_temporal.py --cuda --gpu 0 --lr 5e-4 --batch-size 10  --n_head 4
