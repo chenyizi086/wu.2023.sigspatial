@@ -62,7 +62,7 @@ The training dataset could be download from:
 And it should be placed within the 'dataset/' directory.
 
 🚨: At present, we have made the training patch dataset available for release. 
-Regarding the testing set, we plan to release it as soon as we obtain the necessary copyrights from swisstopo.
+Regarding the testing set, we plan to release it as soon as we obtain the necessary copyrights from [swisstopo](https://www.swisstopo.admin.ch/).
 
 ## How to use :rocket:
 
