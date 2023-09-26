@@ -20,9 +20,6 @@ If you find this code useful in your research, please cite:
 }
 ```
 
-## Sources documents
-
-
 ### Project Structure
 
 Structure of this repository:
