@@ -57,7 +57,7 @@ conda activate sigspatial
 
 The training dataset could be download from:
 
-* [spatial-temporal-historical-map](https://www.polybox.ethz.ch/index.php/apps/files/?dir=/sigspatial_dataset&fileid=3429218146)
+* [spatial-temporal-historical-map](https://www.polybox.ethz.ch/index.php/s/3ClqXVxRKFNFp8d)
 
 And it should be placed within the 'dataset/' directory.
 
