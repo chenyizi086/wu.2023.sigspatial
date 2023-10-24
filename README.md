@@ -11,12 +11,11 @@ we argue that complementary spatio-temporal contexts can be helpful. To achieve 
 If you find this code useful in your research, please cite:
 
 ```
-@inproceedings{wu2021spatialtemporal,
-      title={Cross-attention Spatio-temporal Context Transformer for Semantic Segmentation of Historical Maps}, 
-      author={Sidi Wu and Yizi Chen and Konrad Schindler and Lorenz Hurni},
-      year={2023},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{wu2023cross,
+  title={Cross-attention Spatio-temporal Context Transformer for Semantic Segmentation of Historical Maps},
+  author={Wu, Sidi and Chen, Yizi and Schindler, Konrad and Hurni, Lorenz},
+  journal={arXiv preprint arXiv:2310.12616},
+  year={2023}
 }
 ```
 
