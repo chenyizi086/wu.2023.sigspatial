@@ -8,7 +8,7 @@ we argue that complementary spatio-temporal contexts can be helpful. To achieve 
 
 <img src="img/pipeline.png" width="800"/>
 
-If you find this code useful in your research, please cite:
+If you find this code useful in your research, please cite our [paper](https://arxiv.org/abs/2310.12616):
 
 ```
 @article{wu2023cross,
