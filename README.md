@@ -1,6 +1,6 @@
 # Spatial-temporal model for historical map segmentation 
 
-PyTorch implementation of "Cross-attention Spatio-temporal Context Transformer for Semantic Segmentation of Historical Maps". This paper was accepted at ACM SIGSPATIAL 2023 for oral presentation.
+PyTorch implementation of "Cross-attention Spatio-temporal Context Transformer for Semantic Segmentation of Historical Maps". This paper was accepted at [ACM SIGSPATIAL 2023](https://sigspatial2023.sigspatial.org/) for oral presentation.
 
 ## Abstract
 Historical maps provide useful spatio-temporal information on the Earth’s surface before modern earth observation techniques came into being. To extract information from maps, neural networks, which gain wide popularity in recent years, have replaced hand-crafted map processing methods and tedious manual labor. However, aleatoric uncertainty, known as data-dependent uncertainty, inherent in the drawing/scanning/fading defects of the original map sheets and inadequate contexts when cropping maps into small tiles considering the memory limits of the training process, challenges the model to make correct predictions. As aleatoric uncertainty cannot be reduced even with more training data collected,
